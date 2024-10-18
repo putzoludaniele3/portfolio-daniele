@@ -1,0 +1,117 @@
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header nav ul li {
+  display: inline;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.header nav ul li .button {
+  background-color: #9b5df7;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.header nav ul li .button:hover {
+  background-color: #6d4cba;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(120deg, #d9a7c7, #fffcdc);
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero .highlight {
+  color: #9b5df7;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.hero .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.hero .btn-primary,
+.hero .btn-secondary {
+  padding: 10px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+.hero .btn-primary {
+  background-color: #9b5df7;
+  color: white;
+}
+
+.hero .btn-secondary {
+  background-color: #d9a7c7;
+  color: #333;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+}
+
+.feature h3 {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.feature p {
+  color: #666;
+}
+
+/* Logos */
+.logos {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  opacity: 0.6;
+}
+
+.logos img {
+  max-width: 100px;
+  filter: grayscale(100%);
+}
+
+.logos img:hover {
+  filter: none;
+  opacity: 1;
+}
