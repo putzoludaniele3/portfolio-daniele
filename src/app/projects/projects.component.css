@@ -1,0 +1,119 @@
+/* General */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1b2a;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.teams-section {
+    margin: 0;
+    padding: 100px 0 50px; /* Add extra padding to the top */
+    background-color: #0d1b2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.teams-section h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.teams-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.team-card {
+    background-color: #6c3574;
+    padding: 20px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    width: 50px; /* Regola la dimensione dell'immagine */
+    height: auto; /* Mantiene il rapporto d'aspetto */
+    margin-bottom: 10px; /* Aggiungi uno spazio sotto l'immagine */
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Centra l'immagine all'interno della card */
+}
+
+.project-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.project-btn {
+    background-color: #ff5ca4;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.project-btn:hover {
+    background-color: #e94d91;
+}
+
+/* Animation */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .teams-section {
+        padding: 150px 20px 50px; /* Increase padding at the top to avoid overlap */
+    }
+
+    .team-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .teams-list {
+        flex-direction: column;
+    }
+
+    .teams-section h2 {
+        font-size: 2.5rem; /* Adjust title size for smaller screens */
+    }
+}

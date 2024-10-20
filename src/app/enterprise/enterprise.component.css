@@ -1,0 +1,157 @@
+/* General */
+html,body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #0d1b2a;
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    overflow-x: hidden;
+  }
+  
+  /* Stile per la navbar */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: #0d1b2a;
+    z-index: 1000;
+    box-sizing: border-box;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .header .logo img {
+    max-width: 120px;
+  }
+  
+  .header nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+  }
+  
+  .header nav ul li {
+    margin-right: 20px;
+  }
+  
+  .header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px;
+  }
+  
+  .header nav ul li a:hover {
+    color: #007BFF;
+  }
+  
+  .container {
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 0 20px;
+  }
+  
+  /* Hero Section */
+  .enterprise-section {
+    background-color: #0d1b2a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 50px 0;
+    overflow-x: hidden;
+  }
+  
+  .enterprise-section h2 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 30px;
+  }
+  
+  .company-logos {
+    display: flex;
+    justify-content: space-evenly; /* Spazia uniformemente i loghi */
+    flex-wrap: wrap;
+    gap: 40px; /* Aggiungi più spazio tra i loghi */
+  }
+  
+  .logo-container {
+    width: 150px;
+    height: 150px; /* Aumenta leggermente l'altezza per far respirare di più il logo */
+    overflow: hidden;
+    background-color: transparent; /* Rimuove il colore di background che copre tutto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .logo-container img {
+    max-width: 90%; /* Assicurati che il logo non copra tutto il contenitore */
+    max-height: 90%; 
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    padding: 10px; /* Aggiunge un po' di spazio attorno al logo */
+  }
+  
+  .logo-container:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+  }
+
+  section {
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  /* Animazione */
+  .fade-in-section {
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    background-color: #0d1b2a;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .fade-in-section.show {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+  }
+  
+  @media (max-width: 768px) {
+    .enterprise-section {
+      padding: 20px;
+    }
+  
+    .company-logos {
+        display: flex;
+        justify-content: space-evenly; /* Spazia uniformemente i loghi */
+        flex-wrap: wrap;
+        gap: 40px; /* Aggiungi più spazio tra i loghi */
+    }
+  
+    .logo-container {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  

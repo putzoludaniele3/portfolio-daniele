@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Sofia Pro', sans-serif; /* Match the example font */
+    margin: 0;
+    padding: 0;
+  }
+  
+  section {
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;  /* Start hidden */
+    transform: translateY(100px);  /* Start from below */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  section.show {
+    opacity: 1;
+    transform: translateY(0);  /* Slide up on show */
+  }
+  
