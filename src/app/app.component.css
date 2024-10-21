@@ -23,6 +23,7 @@ body {
     /* Forza solo lo scroll verticale */
     overflow-x: hidden;
     /* Nascondi lo scroll orizzontale */
+    background-color: #0d1b2a;
 }
 
 app-root {
@@ -84,6 +85,12 @@ app-root {
     color: #007BFF;
 }
 
+.header .ego h3{
+    color: antiquewhite;
+    text-align: left;
+    display: flex;
+}
+
 .container {
     max-width: 100vw;
     /* Impedisce che il contenitore superi la larghezza dello schermo */
@@ -97,6 +104,12 @@ app-root {
 section {
     margin: 0;
     padding: 0;
+}
+
+footer p{
+    justify-content: left;
+    background-color: #19324d;
+    color:antiquewhite
 }
 
 @media (max-width: 768px) {
