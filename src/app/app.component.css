@@ -1,6 +1,5 @@
 html,
 body {
-    max-width: 100%;
     overflow-x: hidden;
     /* Evita lo scroll orizzontale */
     margin: 0;
@@ -14,10 +13,11 @@ body {
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    padding-top: 80px;
     /* Questo valore dipende dall'altezza della navbar */
     overflow-y: scroll;
     /* Forza solo lo scroll verticale */
@@ -51,7 +51,6 @@ app-root {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
 }
-
 
 .header .logo img {
     max-width: 120px;
@@ -104,12 +103,20 @@ app-root {
 section {
     margin: 0;
     padding: 0;
+    
 }
 
-footer p{
+footer{
     justify-content: left;
-    background-color: #19324d;
-    color:antiquewhite
+    background-color: #0d1b2a;
+    color:antiquewhite;
+    width: 100%;
+    padding: 10px;
+}
+
+app-home, app-enterprise, app-projects, app-teams {
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-width: 768px) {

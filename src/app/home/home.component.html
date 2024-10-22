@@ -14,25 +14,54 @@
       <h1>Daniele Putzolu</h1>
       <p>Questo e un portfolio realizzato con angular 13.0.3</p>
       <button class="btn-primary" (click)="dowloadCV()">Scarica il CV</button>
-      <a class="btn-secondary">Contattami</a>
+      <button class="btn-secondary" (click)="contactMe()">Contattami</button>
     </div>
   </section>
 
   <!-- Service Section (Animazione in Scroll) -->
-  <section id="services" class="fade-in-section">
-    <div class="service-box">
-      <h2>Siti web e negozi</h2>
-      <p>Design web moderni che fanno brillare il tuo marchio online.</p>
+  <section class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="assets/calendar-icon.png" alt="Icon" />
+      </div>
+      <div class="timeline-content">
+        <h3>Back End Engineer</h3>
+        <h4>We Plus | 2021 - 2022</h4>
+        <p>Spring and SQL</p>
+      </div>
     </div>
-    <div class="service-box">
-      <h2>Progettazione del logo</h2>
-      <p>Disegni di loghi creativi per dare vita alla tua azienda.</p>
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="assets/calendar-icon.png" alt="Icon" />
+      </div>
+      <div class="timeline-content">
+        <h3>Full Stack Engineer</h3>
+        <h4>Action ICT | Aprile 2022 - Maggio 2024</h4>
+        <p>Spring, AngularJS, Angular 2+, SQL</p>
+      </div>
     </div>
-    <div class="service-box">
-      <h2>Consiglio</h2>
-      <p>Consulenza strategica personalizzata per le tue esigenze.</p>
+    <div class="timeline-item">
+      <div class="timeline-icon">
+        <img src="assets/calendar-icon.png" alt="Icon" />
+      </div>
+      <div class="timeline-content">
+        <h3>Software and Test Engineer</h3>
+        <h4>Alten | Maggio 2024 - ora</h4>
+        <p>C#</p>
+      </div>
+    </div>
+    <div class="timeline-item">
+        <div class="timeline-icon">
+          <img src="assets/calendar-icon.png" alt="Icon" />
+        </div>
+        <div class="timeline-content">
+          <h3>My Goal</h3>
+          <h4>?</h4>
+          <p>I'm targeting at least a master's degree in development or cybersecurity.</p>
+        </div>
     </div>
   </section>
+  
 
   <script src="script.js"></script>
 

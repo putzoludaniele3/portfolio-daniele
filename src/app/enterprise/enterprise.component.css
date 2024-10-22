@@ -54,6 +54,14 @@ html,body {
   .header nav ul li a:hover {
     color: #007BFF;
   }
+
+  .highlighted-quote {
+    font-size: 1.8rem;  /* Ridotta da 2rem */
+    font-weight: normal;
+    color: #860aa5;
+    margin-bottom: 30px;
+    text-align: center;
+}
   
   .container {
     max-width: 100vw;
@@ -72,13 +80,26 @@ html,body {
     padding: 50px 0;
     overflow-x: hidden;
   }
-  
-  .enterprise-section h2 {
-    font-size: 3rem;
+
+  .enterprise-section h1{
+    font-size: 1rem;
     color: #fff;
     margin-bottom: 30px;
+    font-size: 1.8rem;
   }
   
+  .enterprise-section h2 {
+    color: #d4b9c5;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    font-style: italic;
+  }
+  
+  .enterprise-section h3{
+    color: #860aa5;
+    margin-bottom: 30px;
+  }
+
   .company-logos {
     display: flex;
     justify-content: space-evenly; /* Spazia uniformemente i loghi */
@@ -128,6 +149,8 @@ html,body {
     visibility: hidden;
     background-color: #0d1b2a;
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    height: 75%;
+    padding-bottom: 110px;
   }
   
   .fade-in-section.show {

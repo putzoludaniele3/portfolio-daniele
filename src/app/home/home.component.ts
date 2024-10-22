@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
   dowloadCV(){
@@ -25,6 +26,15 @@ export class HomeComponent implements OnInit {
     a.click();
     document.body.removeChild(a);
 
+  }
+
+  contactMe(){
+    const email = 'putzoludaniele3@gmail.com';
+    const subject = '';
+    const body = '';
+    
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+    window.location.href = mailtoLink;
   }
 
 }
