@@ -117,19 +117,71 @@ footer{
 app-home, app-enterprise, app-projects, app-teams {
     margin: 0;
     padding: 0;
+    padding-top: 150px;
+    
 }
 
+/* Aggiungiamo uno stile per i menu piccoli */
 @media (max-width: 768px) {
-    .hero {
-      height: auto;
-      padding: 20px;
+    .header {
+      flex-direction: column; /* Dispone il logo e il menu uno sotto l'altro */
+      align-items: flex-start; /* Allinea a sinistra */
+      padding: 10px;
     }
   
-    .hero h1 {
-      font-size: 2rem;
+    .header nav ul {
+      flex-direction: column; /* Dispone gli elementi del menu in colonna */
+      width: 100%; /* Fai in modo che il menu occupi tutto lo schermo */
+      align-items: flex-start;
+      gap: 10px;
     }
   
-    .hero p {
-      font-size: 1rem;
+    .header nav ul li {
+      margin-right: 0; /* Rimuove il margine destro */
+    }
+  
+    .header nav ul li a {
+      padding: 10px 20px; /* Aumenta lo spazio cliccabile per il menu */
+    }
+  
+    .header .ego h3 {
+      font-size: 1.5rem; /* Riduce la dimensione del testo per adattarsi agli schermi piccoli */
+    }
+
+    app-teams{
+        padding-bottom: 200px;
+        padding-top: 100px;
+        height: 100%;
     }
   }
+  
+  /* Stile per schermi ancora più piccoli (max 480px) */
+  @media (max-width: 480px) {
+    .header {
+        padding-top: 50px;
+      padding: 5px;
+    }
+  
+    .header nav ul {
+      gap: 5px;
+    }
+  
+    .header nav ul li a {
+      font-size: 0.9rem; /* Riduce ulteriormente la dimensione del testo */
+    }
+  
+    .header .ego h3 {
+      font-size: 1.2rem; /* Ancora più piccolo per dispositivi molto piccoli */
+    }
+
+    app-teams {
+        height: 1300px !important; /* Specifica meglio il contesto */
+    }
+  }
+  
+  .footer {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 0.8rem; /* Riduce la dimensione del testo del footer per schermi piccoli */
+  }
+  

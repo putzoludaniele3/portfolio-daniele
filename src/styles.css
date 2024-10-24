@@ -9,19 +9,3 @@ html {
     padding: 0;
   }
   
-  section {
-    height: 100vh;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;  /* Start hidden */
-    transform: translateY(100px);  /* Start from below */
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-  }
-  
-  section.show {
-    opacity: 1;
-    transform: translateY(0);  /* Slide up on show */
-  }
-  

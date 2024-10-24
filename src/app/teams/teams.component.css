@@ -117,18 +117,76 @@ html, body {
 }
 
 
-  @media (max-width: 768px) {
-    .teams-section {
-      padding: 20px;
-    }
+@media (max-width: 768px) {
+
   
-    .team-card {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .teams-list {
-      flex-direction: column;
-    }
+  .teams-section {
+    padding: 20px; /* Riduce la quantità di padding sui dispositivi più piccoli */
+    padding-bottom: 50px;
   }
+
+  .team-card {
+    width: 100%; /* Rende le card a larghezza piena su schermi piccoli */
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .teams-list {
+    flex-direction: column;
+    align-items: center; /* Dispone le card in una singola colonna su dispositivi mobili */
+  }
+
+  .teams-section h1, .teams-section h2, .teams-section h3 {
+    font-size: 1.2rem; /* Riduce la dimensione del testo */
+  }
+
+  .highlighted-quote {
+    font-size: 1.5rem; /* Riduce ulteriormente la dimensione della citazione */
+  }
+
+  .timeline-item {
+    width: 90% !important; /* Imposta una larghezza del 90% per le card su schermi più piccoli */
+    margin: 0 auto 20px auto; /* Aggiungi un margine per separare le card */
+  }
+
+}
+
+@media (max-width: 480px) {
+
+
+  .teams-section{
+    margin-top: 150px;
+    padding: 50px;
+  }
+
+  .teams-section h1, .teams-section h2, .teams-section h3 {
+    font-size: 1rem; /* Ancora più piccolo per gli schermi sotto i 480px */
+    padding-bottom: 50px;
+    
+  }
+
+  .highlighted-quote {
+    font-size: 1.2rem; /* Riduzione della citazione per schermi molto piccoli */
+  }
+
+  .team-card {
+    padding: 10px; /* Riduce il padding delle card su schermi molto piccoli */
+    width: 100%; /* Larghezza piena per le card */
+    padding-bottom: 20px;
+  }
+
+  .project-btn {
+    padding: 8px 16px; /* Riduce il bottone per evitare che sembri troppo grande */
+  }
+  .timeline-item {
+    width: 100% !important; /* Imposta una larghezza del 100% per schermi molto piccoli */
+    margin: 0 auto 20px auto; /* Aggiungi un margine per separare le card */
+  }
+
+  .teams-list {
+    flex-direction: column;
+    align-items: center; /* Dispone le card in una singola colonna su dispositivi mobili */
+  }
+}
+
   
